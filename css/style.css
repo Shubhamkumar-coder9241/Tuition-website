@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #dfdede;
+    font-family: 'Poppins', sans-serif;
+}
+
+#main {
+    width: 100%;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 3vw;
+    background: #ffff;
+    padding: 10px 30px;
+}
+
+#header #name {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 20px
+}
+
+#header #name #menu {
+    font-size: 1.2vw;
+    font-weight: 400;
+    color: #191818;
+}
+
+#header #name #menu:hover {
+    color: #dfdede;
+    transition: .3s;
+}
+
+#header #name #logo {
+    font-size: 1.2vw;
+    font-weight: 400;
+    color: #282727;
+}
+
+#header #call i {
+    font-size: 1.4vw;
+    padding: 5px;
+}
+
+#hero {
+    width: 100%;
+    height: 70vh;
+    padding: 0px 2vw;
+    background-color: #c75858;
+}
+
+.in {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.in #search {
+    font-size: 5vw;
+    color: #191818;
+}
+
+#coursesContainer {
+    padding: 20px 40px;
+    margin-top: 20px;
+}
