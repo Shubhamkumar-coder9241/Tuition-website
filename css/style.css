@@ -8,7 +8,8 @@ html,
 body {
     width: 100%;
     height: 100%;
-    background-color: #dfdede;
+    /* background-color: #dfdede; */
+    background-color:    #f4f5f6;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -21,9 +22,12 @@ body {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 3vw;
-    background: #ffff;
+    height: 3.5vw;
+    background: rgb(214, 212, 212);
     padding: 10px 30px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
 }
 
 #header #name {
@@ -34,7 +38,7 @@ body {
 }
 
 #header #name #menu {
-    font-size: 1.2vw;
+    font-size: 1.4vw;
     font-weight: 400;
     color: #191818;
 }
@@ -45,14 +49,21 @@ body {
 }
 
 #header #name #logo {
-    font-size: 1.2vw;
+    font-size: 1.4vw;
     font-weight: 400;
     color: #282727;
+    letter-spacing: -0.5px;
 }
 
 #header #call i {
-    font-size: 1.4vw;
+    font-size: 1.8vw;
     padding: 5px;
+}
+#header #call button:hover {
+    background-color: #73bf6f;
+    transition: .3s;
+    scale: 1.1;
+    border-radius: 5px;
 }
 
 #hero {
@@ -77,4 +88,56 @@ body {
 #coursesContainer {
     padding: 20px 40px;
     margin-top: 20px;
+}
+#course{
+    margin-top: 10vw;
+}
+#teachersection #teacherui {
+    display: flex;
+    justify-content: space-between;
+    height:100vh;
+    margin:5px 10px;
+    flex-direction: row;
+    padding: 0vw 8vw;
+}
+ #teachersection #teacherui #fleft{
+    overflow:hidden;
+    width: 45%;
+    height: inherit;
+}
+
+ #teachersection #teacherui #fleft .teacherinfo{
+    display: flex;
+    width: 100%;
+    height:inherit;
+    justify-content: center;
+    flex-direction: column;
+    
+ }
+ #teachersection #teacherui #fright{
+    display: flex;
+   justify-content:flex-end;
+    align-items: center;
+    background-color: #cac8c8;
+    width: 45%;
+    height: inherit;
+    border:1px solid #191818
+}
+#fright .fimages{
+    width: 100%;
+    height: 80%;
+  background-color: #b11a1a;
+}
+#fleft h2{
+    font-size: 2.5vw;
+    font-weight: 600;
+    letter-spacing: -0.1px;
+}
+#fleft h3{
+    font-size: 1.5vw;
+    font-weight: 500;
+}
+#fleft p{
+    font-size: 1.1vw;
+    font-weight: 400;
 }
