@@ -9,22 +9,24 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://www.unpkg.com/shery-js@1.0.0-alpha.0.5/dist/Shery.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
     <div id="main">
-        <div id="header">
-
+        <header id="header">
             <div id="name">
-                <div id="menu"><i class="fa-solid fa-bars"></i></div>
-                <h2 id="logo">My Coaching</h2>
+                <button id="menu" aria-label="Open menu"><i class="fa-solid fa-bars" aria-hidden="true"></i></button>
+                <h1 id="logo">My Coaching</h1>
             </div>
             <div id="call">
-                <button><i class="fa-brands fa-viber" style="color: rgb(103, 225, 189);"></i></button>
+                <button id="callBtn" aria-label="Contact via Viber"><i class="fa-brands fa-viber"
+                        aria-hidden="true"></i></button>
             </div>
-        </div>
+        </header>
         <div id="hero">
             <img src="#" alt="">
         </div>
@@ -32,7 +34,7 @@
         <div id="belowhero">
             <section class="max-w-7xl mx-auto px-5 py-16">
 
-               
+
                 <div class="text-center mb-14">
                     <h2 class="text-4xl md:text-5xl font-bold text-orange-600">
                         No.1
@@ -43,11 +45,12 @@
                     </h3>
                 </div>
 
-              
+
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
 
-                 
-                    <div class="bg-white rounded-t-full rounded-b-3xl border border-red-300 p-8 text-center hover:-translate-y-2 transition duration-300">
+
+                    <div
+                        class="bg-white rounded-t-full rounded-b-3xl border border-red-300 p-8 text-center hover:-translate-y-2 transition duration-300">
 
                         <div class="text-6xl mb-6">🚀</div>
 
@@ -64,7 +67,8 @@
 
                     </div>
 
-                    <div class="bg-white rounded-t-full rounded-b-3xl border border-yellow-400 p-8 text-center hover:-translate-y-2 transition duration-300">
+                    <div
+                        class="bg-white rounded-t-full rounded-b-3xl border border-yellow-400 p-8 text-center hover:-translate-y-2 transition duration-300">
 
                         <div class="text-6xl mb-6">🏅</div>
 
@@ -83,8 +87,9 @@
 
                     </div>
 
-                 
-                    <div class="bg-white rounded-t-full rounded-b-3xl border border-blue-300 p-8 text-center hover:-translate-y-2 transition duration-300">
+
+                    <div
+                        class="bg-white rounded-t-full rounded-b-3xl border border-blue-300 p-8 text-center hover:-translate-y-2 transition duration-300">
 
                         <div class="text-6xl mb-6">📍</div>
 
@@ -102,8 +107,9 @@
 
                     </div>
 
-              
-                    <div class="bg-white rounded-t-full rounded-b-3xl border border-violet-400 p-8 text-center hover:-translate-y-2 transition duration-300">
+
+                    <div
+                        class="bg-white rounded-t-full rounded-b-3xl border border-violet-400 p-8 text-center hover:-translate-y-2 transition duration-300">
 
                         <div class="text-6xl mb-6">👩‍💻</div>
 
@@ -121,8 +127,9 @@
 
                     </div>
 
-                
-                    <div class="bg-white rounded-t-full rounded-b-3xl border border-green-400 p-8 text-center hover:-translate-y-2 transition duration-300">
+
+                    <div
+                        class="bg-white rounded-t-full rounded-b-3xl border border-green-400 p-8 text-center hover:-translate-y-2 transition duration-300">
 
                         <div class="text-6xl mb-6">👨‍⚕️</div>
 
@@ -152,25 +159,26 @@
             </div>
             <div class="flex items-center justify-center gap-1 max-w-xl mx-auto">
 
-                <input type="text" placeholder="Search Course..." class="flex-1 px-5 py-3 rounded-xl border border-gray-700 outline-none bg-zinc-900 text-white">
+                <input type="text" placeholder="Search Course..."
+                    class="flex-1 px-5 py-3 rounded-xl border border-gray-700 outline-none bg-zinc-900 text-white">
 
                 <button id="search" class=" rounded-xl  border-gray-700 hover:bg-zinc-800 transition">
-        <i class="fa-solid fa-magnifying-glass text-violet-400 text-xl"></i>
-    </button>
+                    <i class="fa-solid fa-magnifying-glass text-violet-400 text-xl"></i>
+                </button>
 
             </div>
 
-            
+
             <section class=" px-5 pb-16">
 
                 <div id="coursesContainer" class="grid gap-8 grid-rows-1 md:grid-rows-2 lg:grid-rows-3 gap-8">
 
-            
+
                     <div class="course  border border-zinc-700 rounded-2xl p-6">
 
                         <span class="bg-green-500 text-black px-3 py-1 rounded-full text-sm font-semibold">
-          Started
-        </span>
+                            Started
+                        </span>
 
                         <h2 class="text-3xl font-bold mt-5">
                             JEE 2027 Batch
@@ -188,19 +196,23 @@
 
                         </div>
 
-                        <button class="inline-flex items-center gap-2 mt-6 bg-blue-600 text-white px-7 py-3.5 rounded-xl text-sm font-medium hover:bg-blue-700 hover:-translate-y-px active:scale-[0.98] transition-all duration-150">
-  <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
-  Enroll Now
-</button>
+                        <button
+                            class="inline-flex items-center gap-2 mt-6 bg-blue-600 text-white px-5 sm:px-7 py-2.5 sm:py-3.5 rounded-xl text-xs sm:text-sm font-medium hover:bg-blue-700 hover:-translate-y-px active:scale-[0.98] transition-all duration-150 w-full sm:w-auto justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                            </svg>
+                            Enroll Now
+                        </button>
 
                     </div>
 
-                
+
                     <div class="course  border border-zinc-700 rounded-2xl p-6">
 
                         <span class="bg-green-500 text-black px-3 py-1 rounded-full text-sm font-semibold">
-          Started
-        </span>
+                            Started
+                        </span>
 
                         <h2 class="text-3xl font-bold mt-5">
                             NEET 2027 Batch
@@ -218,19 +230,23 @@
 
                         </div>
 
-                        <button class="inline-flex items-center gap-2 mt-6 bg-blue-600 text-white px-7 py-3.5 rounded-xl text-sm font-medium hover:bg-blue-700 hover:-translate-y-px active:scale-[0.98] transition-all duration-150">
-  <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
-  Enroll Now
-</button>
+                        <button
+                            class="inline-flex items-center gap-2 mt-6 bg-blue-600 text-white px-5 sm:px-7 py-2.5 sm:py-3.5 rounded-xl text-xs sm:text-sm font-medium hover:bg-blue-700 hover:-translate-y-px active:scale-[0.98] transition-all duration-150 w-full sm:w-auto justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                            </svg>
+                            Enroll Now
+                        </button>
 
                     </div>
 
-                
+
                     <div class="course  border border-zinc-700 rounded-2xl p-6">
 
                         <span class="bg-yellow-500 text-black px-3 py-1 rounded-full text-sm font-semibold">
-          New Batch
-        </span>
+                            New Batch
+                        </span>
 
                         <h2 class="text-3xl font-bold mt-5">
                             Class 10 Foundation
@@ -247,16 +263,20 @@
                             <p>👨‍🎓 Seats Left: 25</p>
 
                         </div>
-                        <button class="inline-flex items-center gap-2 mt-6 bg-blue-600 text-white px-7 py-3.5 rounded-xl text-sm font-medium hover:bg-blue-700 hover:-translate-y-px active:scale-[0.98] transition-all duration-150">
-  <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
-  Enroll Now
-</button>
+                        <button
+                            class="inline-flex items-center gap-2 mt-6 bg-blue-600 text-white px-5 sm:px-7 py-2.5 sm:py-3.5 rounded-xl text-xs sm:text-sm font-medium hover:bg-blue-700 hover:-translate-y-px active:scale-[0.98] transition-all duration-150 w-full sm:w-auto justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                            </svg>
+                            Enroll Now
+                        </button>
                     </div>
                     <div class="course  border border-zinc-700 rounded-2xl p-6">
 
                         <span class="bg-green-500 text-black px-3 py-1 rounded-full text-sm font-semibold">
-          Started
-        </span>
+                            Started
+                        </span>
 
                         <h2 class="text-3xl font-bold mt-5">
                             JEE 2027 Batch
@@ -274,20 +294,25 @@
 
                         </div>
 
-                        <button class="inline-flex items-center gap-2 mt-6 bg-blue-600 text-white px-7 py-3.5 rounded-xl text-sm font-medium hover:bg-blue-700 hover:-translate-y-px active:scale-[0.98] transition-all duration-150">
-  <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
-  Enroll Now
-</button>
+                        <button
+                            class="inline-flex items-center gap-2 mt-6 bg-blue-600 text-white px-7 py-3.5 rounded-xl text-sm font-medium hover:bg-blue-700 hover:-translate-y-px active:scale-[0.98] transition-all duration-150">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                            </svg>
+                            Enroll Now
+                        </button>
 
                     </div>
 
                 </div>
-          
+
 
                 <div class="flex justify-center mt-8">
-                    <button class="inline-flex items-center gap-2 bg-blue-600 text-white px-7 py-3.5 rounded-xl text-sm font-medium hover:bg-blue-700 hover:-translate-y-px active:scale-[0.98] transition-all duration-150">
-    To know more about our courses click here
-  </button>
+                    <button
+                        class="inline-flex items-center gap-2 bg-blue-600 text-white px-5 sm:px-7 py-2.5 sm:py-3.5 rounded-xl text-xs sm:text-sm font-medium hover:bg-blue-700 hover:-translate-y-px active:scale-[0.98] transition-all duration-150 w-full sm:w-auto justify-center max-w-md">
+                        To know more about our courses click here
+                    </button>
                 </div>
 
             </section>
@@ -296,30 +321,33 @@
 
 
 
-       <div id="why-you-"  class="bg-gray-70 text-slate-900 py-16">
-        
+        <div id="why-you-" class="bg-gray-70 text-slate-900 py-16">
+
             <div class="max-w-7xl mx-auto px-5">
 
-               
+
                 <div class="text-center mb-16">
                     <span class="text-blue-500 font-semibold tracking-widest uppercase">
-        Why Students Trust Us
-      </span>
+                        Why Students Trust Us
+                    </span>
 
-                    <h2 class="mt-4 text-4xl md:text-6xl font-bold bg-gradient-to-r from-blue-500 via-violet-500 to-cyan-500 bg-clip-text text-transparent">
+                    <h2
+                        class="mt-4 text-4xl md:text-6xl font-bold bg-gradient-to-r from-blue-500 via-violet-500 to-cyan-500 bg-clip-text text-transparent">
                         Why Choose Us?
                     </h2>
 
                     <p class="mt-5 text-slate-600 max-w-3xl mx-auto text-lg">
-                        Trusted coaching with proven results, expert teachers, personalized mentorship, and a student-first learning environment.
+                        Trusted coaching with proven results, expert teachers, personalized mentorship, and a
+                        student-first learning environment.
                     </p>
                 </div>
 
-               
+
                 <div class="grid gap-10 gap-x-20 gap-y-20 grid-cols-1 md:grid-cols-2">
 
-                
-                    <div class="group bg-white border border-gray-200 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 hover:border-blue-500 hover:shadow-lg">
+
+                    <div
+                        class="group bg-white border border-gray-200 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 hover:border-blue-500 hover:shadow-lg">
 
                         <div class="w-16 h-16 flex items-center justify-center rounded-2xl bg-blue-100 text-4xl mb-6">
                             🎓
@@ -330,13 +358,15 @@
                         </h3>
 
                         <p class="text-slate-600 leading-relaxed">
-                            Learn from experienced mentors with years of expertise in JEE, NEET, and board examination preparation.
+                            Learn from experienced mentors with years of expertise in JEE, NEET, and board examination
+                            preparation.
                         </p>
 
                     </div>
 
-                 
-                    <div class="group bg-white border border-gray-200 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 hover:border-green-500 hover:shadow-lg">
+
+                    <div
+                        class="group bg-white border border-gray-200 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 hover:border-green-500 hover:shadow-lg">
 
                         <div class="w-16 h-16 flex items-center justify-center rounded-2xl bg-green-100 text-4xl mb-6">
                             📈
@@ -347,13 +377,15 @@
                         </h3>
 
                         <p class="text-slate-600 leading-relaxed">
-                            Consistent top ranks, excellent board results, and hundreds of successful admissions every year.
+                            Consistent top ranks, excellent board results, and hundreds of successful admissions every
+                            year.
                         </p>
 
                     </div>
 
-                 
-                    <div class="group bg-white border border-gray-200 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 hover:border-violet-500 hover:shadow-lg">
+
+                    <div
+                        class="group bg-white border border-gray-200 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 hover:border-violet-500 hover:shadow-lg">
 
                         <div class="w-16 h-16 flex items-center justify-center rounded-2xl bg-violet-100 text-4xl mb-6">
                             💡
@@ -364,13 +396,15 @@
                         </h3>
 
                         <p class="text-slate-600 leading-relaxed">
-                            Small batches, regular doubt sessions, personal guidance, and continuous performance tracking.
+                            Small batches, regular doubt sessions, personal guidance, and continuous performance
+                            tracking.
                         </p>
 
                     </div>
 
-                  
-                    <div class="group bg-white border border-gray-200 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 hover:border-violet-500 hover:shadow-lg">
+
+                    <div
+                        class="group bg-white border border-gray-200 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 hover:border-violet-500 hover:shadow-lg">
 
                         <div class="w-16 h-16 flex items-center justify-center rounded-2xl bg-violet-100 text-4xl mb-6">
                             📚
@@ -381,13 +415,15 @@
                         </h3>
 
                         <p class="text-slate-600 leading-relaxed">
-                            Expert-prepared study material covering all the important concepts, formulae and memory-based facts for competitive exams.
+                            Expert-prepared study material covering all the important concepts, formulae and
+                            memory-based facts for competitive exams.
                         </p>
 
                     </div>
 
-                 
-                    <div class="group bg-white border border-gray-200 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 hover:border-violet-500 hover:shadow-lg">
+
+                    <div
+                        class="group bg-white border border-gray-200 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 hover:border-violet-500 hover:shadow-lg">
 
                         <div class="w-16 h-16 flex items-center justify-center rounded-2xl bg-violet-100 text-4xl mb-6">
                             📝
@@ -398,13 +434,15 @@
                         </h3>
 
                         <p class="text-slate-600 leading-relaxed">
-                            Regular assessments mirroring competitive exam patterns to track progress, identify weak areas, and boost confidence.
+                            Regular assessments mirroring competitive exam patterns to track progress, identify weak
+                            areas, and boost confidence.
                         </p>
 
                     </div>
 
-                    
-                    <div class="group bg-white border border-gray-200 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 hover:border-violet-500 hover:shadow-lg">
+
+                    <div
+                        class="group bg-white border border-gray-200 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 hover:border-violet-500 hover:shadow-lg">
 
                         <div class="w-16 h-16 flex items-center justify-center rounded-2xl bg-violet-100 text-4xl mb-6">
                             👨‍🏫
@@ -415,7 +453,8 @@
                         </h3>
 
                         <p class="text-slate-600 leading-relaxed">
-                            Dedicated subject experts for Physics, Chemistry, and Mathematics to provide in-depth understanding and personalized guidance.
+                            Dedicated subject experts for Physics, Chemistry, and Mathematics to provide in-depth
+                            understanding and personalized guidance.
                         </p>
 
                     </div>
@@ -423,14 +462,15 @@
                 </div>
 
             </div>
-       
-       </div>
+
+        </div>
 
         <div id="teachersection">
-             <section class="max-w-7xl mx-auto px-5 py-16">
+            <section class="max-w-7xl mx-auto px-5 py-16">
                 <!-- Badge -->
                 <div class="flex justify-center mb-8">
-                    <div class="inline-flex items-center gap-2 bg-blue-100 text-blue-600 px-4 py-2 rounded-full font-semibold">
+                    <div
+                        class="inline-flex items-center gap-2 bg-blue-100 text-blue-600 px-4 py-2 rounded-full font-semibold">
                         <i class="fa-solid fa-graduation-cap"></i>
                         <span>OUR FACULTY</span>
                     </div>
@@ -450,114 +490,500 @@
                     </p>
                 </div>
             </section>
+
             <div id="teacherui">
                 <div id="fleft">
-                 <div class="teacherinfo">
-                    <h2>Amit Kumar</h2>
-                    <h3>Physics Teacher</h3>
-                     <div id="tedu" class="flex items-center gap-2" >
-                        <i class="fa-solid fa-graduation-cap"></i>
-                        <p>Ph.D. in Physics, IIT Delhi</p>
-                     </div>
+                    <div class="teacherinfo">
+                        <h2>Amit Kumar</h2>
+                        <h3>Physics Teacher</h3>
+                        <div id="tedu" class="flex items-center gap-2">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <p>Ph.D. in Physics, IIT Delhi</p>
+                        </div>
 
                         <div id="texperi" class="flex items-center gap-2">
-                             <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
                             <p>10+ years of teaching experience</p>
                         </div>
                         <div id="ttstudent" class="flex items-center gap-2">
                             <i class="fa-solid fa-users"></i>
                             <p>Guided 1000+ students to success</p>
                         </div>
-                 </div>
-                  <div class="teacherinfo">
-                    <h2>Amit Kumar</h2>
-                    <h3>Physics Teacher</h3>
-                     <div id="tedu" class="flex items-center gap-2" >
-                        <i class="fa-solid fa-graduation-cap"></i>
-                        <p>Ph.D. in Physics, IIT Delhi</p>
-                     </div>
-
-                        <div id="texperi" class="flex items-center gap-2">
-                             <i class="fa-solid fa-star"></i>
-                            <p>10+ years of teaching experience</p>
-                        </div>
-                        <div id="ttstudent" class="flex items-center gap-2">
-                            <i class="fa-solid fa-users"></i>
-                            <p>Guided 1000+ students to success</p>
-                        </div>
-                 </div>
-                  <div class="teacherinfo">
-                    <h2>Amit Kumar</h2>
-                    <h3>Physics Teacher</h3>
-                     <div id="tedu" class="flex items-center gap-2" >
-                        <i class="fa-solid fa-graduation-cap"></i>
-                        <p>Ph.D. in Physics, IIT Delhi</p>
-                     </div>
-
-                        <div id="texperi" class="flex items-center gap-2">
-                             <i class="fa-solid fa-star"></i>
-                            <p>10+ years of teaching experience</p>
-                        </div>
-                        <div id="ttstudent" class="flex items-center gap-2">
-                            <i class="fa-solid fa-users"></i>
-                            <p>Guided 1000+ students to success</p>
-                        </div>
-                 </div>
-                  <div class="teacherinfo">
-                    <h2>Amit Kumar</h2>
-                    <h3>Physics Teacher</h3>
-                     <div id="tedu" class="flex items-center gap-2" >
-                        <i class="fa-solid fa-graduation-cap"></i>
-                        <p>Ph.D. in Physics, IIT Delhi</p>
-                     </div>
-
-                        <div id="texperi" class="flex items-center gap-2">
-                             <i class="fa-solid fa-star"></i>
-                            <p>10+ years of teaching experience</p>
-                        </div>
-                        <div id="ttstudent" class="flex items-center gap-2">
-                            <i class="fa-solid fa-users"></i>
-                            <p>Guided 1000+ students to success</p>
-                        </div>
-                 </div>
-                  <div class="teacherinfo">
-                    <h2>Amit Kumar</h2>
-                    <h3>Physics Teacher</h3>
-                     <div id="tedu" class="flex items-center gap-2" >
-                        <i class="fa-solid fa-graduation-cap"></i>
-                        <p>Ph.D. in Physics, IIT Delhi</p>
-                     </div>
-
-                        <div id="texperi" class="flex items-center gap-2">
-                             <i class="fa-solid fa-star"></i>
-                            <p>10+ years of teaching experience</p>
-                        </div>
-                        <div id="ttstudent" class="flex items-center gap-2">
-                            <i class="fa-solid fa-users"></i>
-                            <p>Guided 1000+ students to success</p>
-                        </div>
-                 </div>
-
                     </div>
-            <div id="fright">
-                <div class="fimages"></div>
-                <div class="fimages"></div>
-                <div class="fimages"></div>
-                <div class="fimages"></div>
-                <div class="fimages"></div>
+                    <div class="teacherinfo">
+                        <h2>Amit Kumar</h2>
+                        <h3>Physics Teacher</h3>
+                        <div id="tedu" class="flex items-center gap-2">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <p>Ph.D. in Physics, IIT Delhi</p>
+                        </div>
+
+                        <div id="texperi" class="flex items-center gap-2">
+                            <i class="fa-solid fa-star"></i>
+                            <p>10+ years of teaching experience</p>
+                        </div>
+                        <div id="ttstudent" class="flex items-center gap-2">
+                            <i class="fa-solid fa-users"></i>
+                            <p>Guided 1000+ students to success</p>
+                        </div>
+                    </div>
+                    <div class="teacherinfo">
+                        <h2>Amit Kumar</h2>
+                        <h3>Physics Teacher</h3>
+                        <div id="tedu" class="flex items-center gap-2">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <p>Ph.D. in Physics, IIT Delhi</p>
+                        </div>
+
+                        <div id="texperi" class="flex items-center gap-2">
+                            <i class="fa-solid fa-star"></i>
+                            <p>10+ years of teaching experience</p>
+                        </div>
+                        <div id="ttstudent" class="flex items-center gap-2">
+                            <i class="fa-solid fa-users"></i>
+                            <p>Guided 1000+ students to success</p>
+                        </div>
+                    </div>
+                    <div class="teacherinfo">
+                        <h2>Amit Kumar</h2>
+                        <h3>Physics Teacher</h3>
+                        <div id="tedu" class="flex items-center gap-2">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <p>Ph.D. in Physics, IIT Delhi</p>
+                        </div>
+
+                        <div id="texperi" class="flex items-center gap-2">
+                            <i class="fa-solid fa-star"></i>
+                            <p>10+ years of teaching experience</p>
+                        </div>
+                        <div id="ttstudent" class="flex items-center gap-2">
+                            <i class="fa-solid fa-users"></i>
+                            <p>Guided 1000+ students to success</p>
+                        </div>
+                    </div>
+                    <div class="teacherinfo">
+                        <h2>Amit Kumar</h2>
+                        <h3>Physics Teacher</h3>
+                        <div id="tedu" class="flex items-center gap-2">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <p>Ph.D. in Physics, IIT Delhi</p>
+                        </div>
+
+                        <div id="texperi" class="flex items-center gap-2">
+                            <i class="fa-solid fa-star"></i>
+                            <p>10+ years of teaching experience</p>
+                        </div>
+                        <div id="ttstudent" class="flex items-center gap-2">
+                            <i class="fa-solid fa-users"></i>
+                            <p>Guided 1000+ students to success</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div id="fright">
+                    <div class="fimages">
+                        <div class="imgteacher"><img
+                                src="https://images.unsplash.com/photo-1544717305-2782549b5136?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHRlYWNoZXJzfGVufDB8fDB8fHww"
+                                alt="">
+                        </div>
+                    </div>
+
+                </div>
+
             </div>
-        </div>
-            
-            
+            <div class="flex justify-center px-4 py-8">
+                <button class="btn"> View our Teacher </button>
+            </div>
+
         </div>
 
+
+        <div id="resultsection" class="bg-gradient-to-b from-blue-50 to-white py-10 m-10">
+            <section class="max-w-7xl mx-auto px-5">
+
+                <div class="flex justify-center mb-8">
+                    <div
+                        class="inline-flex items-center gap-2 bg-blue-100 text-blue-600 px-4 py-2 rounded-full font-semibold">
+                        <i class="fa-solid fa-trophy"></i>
+                        <span>RESULTS & ACHIEVEMENTS</span>
+                    </div>
+                </div>
+
+
+                <div class="text-center mb-16">
+                    <h1 class="text-5xl md:text-6xl font-bold">
+                        Our Student <span class="text-blue-600">Success Stories</span>
+                    </h1>
+                </div>
+
+                <!-- Subtitle -->
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Witness the exceptional performance of our students across JEE, NEET, and Board Examinations.
+                    </p>
+                </div>
+
+                <!-- Results Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                    <!-- JEE Results -->
+                    <div
+                        class="bg-white border-2 border-blue-200 rounded-2xl p-8 hover:shadow-xl transition-all duration-300">
+                        <div class="text-5xl mb-4">🎓</div>
+                        <h3 class="text-2xl font-bold text-slate-900 mb-2">JEE Main & Advanced</h3>
+                        <div class="space-y-3">
+                            <p class="text-gray-600"><span class="font-semibold text-blue-600">900+</span> Students
+                                Selected</p>
+                            <p class="text-gray-600">Average Score: <span class="font-semibold text-blue-600">92%</span>
+                            </p>
+                            <p class="text-gray-600">Top Rank: <span class="font-semibold text-blue-600">AIR 12</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- NEET Results -->
+                    <div
+                        class="bg-white border-2 border-green-200 rounded-2xl p-8 hover:shadow-xl transition-all duration-300">
+                        <div class="text-5xl mb-4">👨‍⚕️</div>
+                        <h3 class="text-2xl font-bold text-slate-900 mb-2">NEET-UG</h3>
+                        <div class="space-y-3">
+                            <p class="text-gray-600"><span class="font-semibold text-green-600">23000+</span> Students
+                                Selected</p>
+                            <p class="text-gray-600">Average Score: <span
+                                    class="font-semibold text-green-600">680+</span></p>
+                            <p class="text-gray-600">Selection Rate: <span
+                                    class="font-semibold text-green-600">87%</span></p>
+                        </div>
+                    </div>
+
+                    <!-- Board Results -->
+                    <div
+                        class="bg-white border-2 border-yellow-200 rounded-2xl p-8 hover:shadow-xl transition-all duration-300">
+                        <div class="text-5xl mb-4">📚</div>
+                        <h3 class="text-2xl font-bold text-slate-900 mb-2">Board Exams</h3>
+                        <div class="space-y-3">
+                            <p class="text-gray-600"><span class="font-semibold text-yellow-600">27 Times</span> State
+                                Rank 1</p>
+                            <p class="text-gray-600">Average Score: <span
+                                    class="font-semibold text-yellow-600">95%</span></p>
+                            <p class="text-gray-600">Distinction: <span class="font-semibold text-yellow-600">98%</span>
+                                Students</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Top Performers -->
+                <div class="bg-gradient-to-r from-blue-500 to-violet-600 rounded-2xl p-8 text-white mb-12">
+                    <h2 class="text-3xl font-bold mb-8">Top Performers This Year</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <div class="bg-white bg-opacity-10 backdrop-blur rounded-xl p-6 text-center">
+                            <div class="text-4xl font-bold mb-2">Raj Sharma</div>
+                            <p class="mb-2">JEE Advanced Rank 8</p>
+                            <p class="text-sm text-blue-100">Chemistry Batch 2027</p>
+                        </div>
+                        <div class="bg-white bg-opacity-10 backdrop-blur rounded-xl p-6 text-center">
+                            <div class="text-4xl font-bold mb-2">Priya Singh</div>
+                            <p class="mb-2">NEET Rank 142</p>
+                            <p class="text-sm text-blue-100">NEET 2027 Batch</p>
+                        </div>
+                        <div class="bg-white bg-opacity-10 backdrop-blur rounded-xl p-6 text-center">
+                            <div class="text-4xl font-bold mb-2">Aditya Verma</div>
+                            <p class="mb-2">Class 10 - 98%</p>
+                            <p class="text-sm text-blue-100">Board Topper 2026</p>
+                        </div>
+                        <div class="bg-white bg-opacity-10 backdrop-blur rounded-xl p-6 text-center">
+                            <div class="text-4xl font-bold mb-2">Ananya Das</div>
+                            <p class="mb-2">JEE Mains - 97%ile</p>
+                            <p class="text-sm text-blue-100">Physics Batch 2027</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CTA Button -->
+                <div class="flex justify-center px-4">
+                    <button
+                        class="inline-flex items-center gap-2 bg-blue-600 text-white px-5 sm:px-8 py-3 sm:py-4 rounded-xl text-sm sm:text-lg font-semibold hover:bg-blue-700 transition-all duration-200 w-full sm:w-auto justify-center max-w-md">
+                        <i class="fa-solid fa-arrow-right" style="color: rgb(54, 67, 77);"></i>
+                        For more detail click here
+                    </button>
+                </div>
+            </section>
+        </div>
+
+        <div id="testimonials" class="bg-slate-50 py-20">
+            <section class="max-w-7xl mx-auto px-5">
+                <div class="flex justify-center mb-8">
+                    <div
+                        class="inline-flex items-center gap-2 bg-slate-100 text-slate-900 px-4 py-2 rounded-full font-semibold">
+                        <i class="fa-solid fa-quote-left"></i>
+                        <span>STUDENT TESTIMONIALS</span>
+                    </div>
+                </div>
+
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl md:text-5xl font-bold">
+                        What Our Students <span class="text-blue-600">Say About Us</span>
+                    </h2>
+                    <p class="mt-4 text-gray-600 max-w-3xl mx-auto">
+                        Real feedback from students who achieved top ranks and improved their confidence with our
+                        coaching.
+                    </p>
+                </div>
+
+                <div class="grid gap-8 lg:grid-cols-3 container">
+                    <div class="box test-card bg-white rounded-3xl p-0 shadow-sm transition-all duration-500">
+                        <div class="slide slide1">
+                            <div class="icon bg-blue-100 flex items-center justify-center text-4xl text-blue-600">A
+                            </div>
+                        </div>
+                        <div class="slide slide2 p-8">
+                            <div class="content flex items-center gap-4 mb-4">
+                                <div
+                                    class="h-14 w-14 rounded-full bg-blue-100 flex items-center justify-center text-2xl text-blue-600">
+                                    A</div>
+                                <div>
+                                    <h3 class="text-xl font-semibold">Ananya Sharma</h3>
+                                    <p class="text-sm text-gray-500">NEET 2027 Aspirant</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-700 leading-relaxed">"The teachers explained difficult topics clearly,
+                                and the regular doubt sessions helped me stay on track every week. I improved my scores
+                                in just a few months."</p>
+                        </div>
+                    </div>
+
+                    <div class="box test-card bg-white rounded-3xl p-0 shadow-sm transition-all duration-500">
+                        <div class="slide slide1">
+                            <div class="icon bg-green-100 flex items-center justify-center text-4xl text-green-600">R
+                            </div>
+                        </div>
+                        <div class="slide slide2 p-8">
+                            <div class="content flex items-center gap-4 mb-4">
+                                <div
+                                    class="h-14 w-14 rounded-full bg-green-100 flex items-center justify-center text-2xl text-green-600">
+                                    R</div>
+                                <div>
+                                    <h3 class="text-xl font-semibold">Rohan Verma</h3>
+                                    <p class="text-sm text-gray-500">JEE 2027 Student</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-700 leading-relaxed">"I got the personal guidance I needed for Physics
+                                and Maths. The study material was excellent and made revision very easy before exams."
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="box test-card bg-white rounded-3xl p-0 shadow-sm transition-all duration-500">
+                        <div class="slide slide1">
+                            <div class="icon bg-violet-100 flex items-center justify-center text-4xl text-violet-600">P
+                            </div>
+                        </div>
+                        <div class="slide slide2 p-8">
+                            <div class="content flex items-center gap-4 mb-4">
+                                <div
+                                    class="h-14 w-14 rounded-full bg-violet-100 flex items-center justify-center text-2xl text-violet-600">
+                                    P</div>
+                                <div>
+                                    <h3 class="text-xl font-semibold">Priya Gupta</h3>
+                                    <p class="text-sm text-gray-500">Class 10 Board Student</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-700 leading-relaxed">"The test series was very helpful and made me
+                                confident for my board exams. My teachers were always available to answer my questions."
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+        <div id="faq" class="bg-white py-20">
+
+            <section class="max-w-7xl mx-auto px-5">
+                <div class="flex justify-center mb-8">
+                    <div
+                        class="inline-flex items-center gap-2 bg-blue-100 text-blue-600 px-4 py-2 rounded-full font-semibold">
+                        <i class="fa-solid fa-question"></i>
+                        <span>FREQUENTLY ASKED QUESTIONS</span>
+                    </div>
+                </div>
+
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl md:text-5xl font-bold">
+                        Common Questions <span class="text-blue-600">Answered</span>
+                    </h2>
+                    <p class="mt-4 text-gray-600 max-w-3xl mx-auto">
+                        Find quick answers about our courses, admissions, schedules, and support options.
+                    </p>
+                </div>
+                <div class="faq-grid">
+
+
+                    <div class="card card-hover border border-slate-200 rounded-3xl p-8 bg-white shadow-sm">
+                        <div class="face face1">
+                            <div class="content">
+                                <h3>How do I enroll in a course?</h3>
+                                <p>You can enroll by clicking the "Enroll Now" button on the course card, or by
+                                    contacting us through the admission page. We will guide you through the registration
+                                    process.</p>
+                            </div>
+                        </div>
+                        <div class="face face2">
+                            <h2>01</h2>
+                        </div>
+                    </div>
+
+                    <div class="card card-hover border border-slate-200 rounded-3xl p-8 bg-white shadow-sm">
+                        <div class="face face1">
+                            <div class="content">
+                                <h3>What is the batch schedule?</h3>
+                                <p>Batch timings vary by course. Most courses run in the evening, and some also offer
+                                    morning or weekend batches. Please check the course details or contact us for the
+                                    latest schedule.</p>
+                            </div>
+                        </div>
+                        <div class="face face2">
+                            <h2>02</h2>
+                        </div>
+                    </div>
+
+                    <div class="card card-hover border border-slate-200 rounded-3xl p-8 bg-white shadow-sm">
+                        <div class="face face1">
+                            <div class="content">
+                                <h3>Do you provide study materials?</h3>
+                                <p>Yes. Every student receives comprehensive study material, practice tests, and
+                                    revision notes prepared by our expert teachers.</p>
+                            </div>
+                        </div>
+                        <div class="face face2">
+                            <h2>03</h2>
+                        </div>
+                    </div>
+
+                    <div class="card card-hover border border-slate-200 rounded-3xl p-8 bg-white shadow-sm">
+                        <div class="face face1">
+                            <div class="content">
+                                <h3>Can I join mid-session?</h3>
+                                <p>Yes, mid-session admissions are usually possible depending on seat availability.
+                                    Contact our admissions team to check current openings and enrollment options.</p>
+                            </div>
+                        </div>
+                        <div class="face face2">
+                            <h2>04</h2>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+
+        <div id="contact-cta" class="bg-gradient-to-r from-blue-600 via-violet-600 to-cyan-500 text-white py-20">
+            <section class="max-w-7xl mx-auto px-5 text-center">
+                <div
+                    class="mb-6 inline-flex items-center gap-3 rounded-full bg-white/15 px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-blue-900/20 border border-white/20">
+                    <i class="fa-solid fa-phone"></i>
+                    Ready to join? Contact us today.
+                </div>
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">
+                    Get personalized guidance and enroll in the right batch now.
+                </h2>
+                <p class="mx-auto mb-8 max-w-2xl text-lg text-slate-100 leading-relaxed">
+                    Speak with our admissions team for course details, batch schedules, and special offers. We are here
+                    to help you find the perfect plan.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                    <a href="contact.html"
+                        class="inline-flex items-center justify-center rounded-full bg-white px-8 py-4 text-base font-semibold text-blue-700 shadow-lg shadow-slate-900/15 transition hover:-translate-y-1 hover:bg-slate-100">
+                        Contact Us
+                    </a>
+                    <a href="tel:+919241296570"
+                        class="inline-flex items-center justify-center rounded-full border border-white/30 bg-white/10 px-8 py-4 text-base font-semibold text-white transition hover:-translate-y-1 hover:bg-white/20">
+                        Call Now
+                    </a>
+                </div>
+            </section>
+        </div>
+
+
+
+        <footer class="bg-slate-950 text-slate-200 py-16">
+            <section class="max-w-7xl mx-auto px-5">
+                <div class="grid gap-10 lg:grid-cols-4">
+                    <div>
+                        <h3 class="text-2xl font-bold text-white mb-4">My Coaching</h3>
+                        <p class="text-slate-400 leading-relaxed">Trusted coaching institute in Patna offering JEE,
+                            NEET, and board exam preparation with expert faculty and proven results.</p>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-semibold text-white mb-4">Quick Links</h4>
+                        <ul class="space-y-3 text-slate-400">
+                            <li><a href="index.html" class="hover:text-white transition">Home</a></li>
+                            <li><a href="course.html" class="hover:text-white transition">Courses</a></li>
+                            <li><a href="teacher.html" class="hover:text-white transition">Teachers</a></li>
+                            <li><a href="admission.html" class="hover:text-white transition">Admission</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-semibold text-white mb-4">Contact Info</h4>
+                        <p class="text-slate-400">Phone: <a href="tel:+911234567890"
+                                class="hover:text-white transition">+91 12345 67890</a></p>
+                        <p class="text-slate-400">Email: <a href="mailto:info@mycoaching.com"
+                                class="hover:text-white transition">info@mycoaching.com</a></p>
+                        <p class="text-slate-400">Address: Patna, Bihar, India</p>
+                        <br>
+                        <p class="text-slate-400">
+                            <i class="fa-brands fa-whatsapp" style="color: rgb(99, 230, 190); font-size: 25px;"></i>
+                            <a href="tel:+911234567890" class="hover:text-white transition">+91 9241296570</a>
+                        </p>
+                    </div>
+                    <!-- <div>
+                        <h4 class="text-xl font-semibold text-white mb-4">Follow Us</h4>
+                        <ul class="space-y-3 text-slate-400 ul">
+                            <li class="li"><a href="https://instagram.com" target="_blank" class="hover:text-white transition"><i class="fa-brands fa-instagram mr-2"></i>Instagram</a></li>
+                            <li class="li"><a href="https://twitter.com" target="_blank" class="hover:text-white transition"><i class="fa-brands fa-twitter mr-2"></i>Twitter</a></li>
+                            <li class="li"><a href="https://facebook.com" target="_blank" class="hover:text-white transition"><i class="fa-brands fa-facebook-f mr-2"></i>Facebook</a></li>
+                        </ul>
+                    </div> -->
+                    <div>
+                        <h4 class="text-xl font-semibold text-white mb-4">Follow Us</h4>
+                        <ul class="social-ul">
+                            <li class="social-li">
+                                <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li class="social-li">
+                                <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li class="social-li">
+                                <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mt-12 border-t border-slate-800 pt-6 text-center text-slate-500 text-sm">
+                    © 2026 My Coaching. All rights reserved.
+                </div>
+            </section>
+        </footer>
     </div>
 
 
-    </script>
+
+    <script src="https://www.unpkg.com/shery-js@1.0.0-alpha.0.5/dist/Shery.js"></script>
 
 
-    <script src="script.js"></script>
+    // Gsap is needed for Basic Effects
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+    // Scroll Trigger is needed for Scroll Effects
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
