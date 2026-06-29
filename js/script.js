@@ -53,6 +53,9 @@ main.addEventListener("mousemove",function(dets){
         y:dets.y,
         ease:"back.out",
     })
-})
+});
+
+
+
 
 
