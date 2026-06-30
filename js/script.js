@@ -1,5 +1,5 @@
-let cursor=document.querySelector("#cursor");
-let main=document.querySelector("#main");
+let cursor = document.querySelector("#cursor");
+let main = document.querySelector("#main");
 const menuBtn = document.querySelector("#menu");
 
 menuBtn.addEventListener("click", () => {
@@ -46,14 +46,34 @@ menuBtn.addEventListener("click", () => {
 });
 
 
-main.addEventListener("mousemove",function(dets){
-   
-    gsap.to(cursor,{
-        x:dets.x,
-        y:dets.y,
-        ease:"back.out",
+window.addEventListener("mousemove", function (dets) {
+
+    gsap.to(cursor, {
+        x: dets.x,
+        y: dets.y,
+        ease: "back.out",
     })
 });
+
+const images = gsap.utils.toArray('#carousel .carousel-img');
+let current = 0;
+
+// Set initial state with GSAP instead of relying on the CSS "active" class
+gsap.set(images, { opacity: 0 });
+gsap.set(images[0], { opacity: 1 });
+
+function nextSlide() {
+    const next = (current + 1) % images.length;
+
+    gsap.to(images[current], { opacity: 0, duration: 1, ease: 'power1.inOut' });
+    gsap.to(images[next], { opacity: 1, duration: 1, ease: 'power1.inOut' });
+
+    current = next;
+}
+
+setInterval(nextSlide, 4000);
+
+
 
 
 

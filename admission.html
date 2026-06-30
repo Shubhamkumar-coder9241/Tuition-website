@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+<body>
+  <div id="main">
+     <header id="header">
+            <div id="name">
+                <button id="menu" aria-label="Open menu"><i class="fa-solid fa-bars" aria-hidden="true"></i></button>
+                <h1 id="logo">My Coaching</h1>
+            </div>
+            <div id="call">
+                <button id="callBtn" aria-label="Contact via Viber"><i class="fa-brands fa-viber"
+                        aria-hidden="true"></i></button>
+            </div>
+        </header>
+    <div class="min-h-screen bg-gray-100 flex items-center justify-center px-4 py-10">
+
+    <div class="w-full max-w-lg bg-white rounded-2xl shadow-xl p-8">
+
+        <h1 class="text-3xl font-bold text-gray-800 mb-8">
+            Admin Registration
+        </h1>
+
+        <form class="space-y-5">
+
+            <!-- Name -->
+            <div>
+                <label class="block mb-2 font-medium text-gray-700">
+                    Name
+                </label>
+
+                <input
+                    type="text"
+                    required
+                    class="w-full border border-gray-300 rounded-lg px-4 py-3 outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200"
+                >
+            </div>
+
+            <!-- Email -->
+            <div>
+                <label class="block mb-2 font-medium text-gray-700">
+                    Email
+                </label>
+
+                <input
+                    type="email"
+                    required
+                    class="w-full border border-gray-300 rounded-lg px-4 py-3 outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200"
+                >
+            </div>
+
+            <!-- Password -->
+            <div>
+                <label class="block mb-2 font-medium text-gray-700">
+                    Password
+                </label>
+
+                <input
+                    type="password"
+                    minlength="6"
+                    required
+                    class="w-full border border-gray-300 rounded-lg px-4 py-3 outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200"
+                >
+            </div>
+
+            <!-- Phone -->
+            <div>
+                <label class="block mb-2 font-medium text-gray-700">
+                    Phone Number
+                </label>
+
+                <input
+                    type="tel"
+                    required
+                    placeholder="9876543210"
+                    class="w-full border border-gray-300 rounded-lg px-4 py-3 outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200"
+                >
+            </div>
+
+            <!-- Role -->
+            <div>
+                <label class="block mb-2 font-medium text-gray-700">
+                    Role
+                </label>
+
+                <select
+                    class="w-full border border-gray-300 rounded-lg px-4 py-3 outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200"
+                >
+                    <option>Select Role</option>
+                    <option>Super Admin</option>
+                    <option>Manager</option>
+                    <option>Staff</option>
+                </select>
+            </div>
+
+            <!-- Notes -->
+            <div>
+                <label class="block mb-2 font-medium text-gray-700">
+                    Notes
+                </label>
+
+                <textarea
+                    rows="5"
+                    class="w-full border border-gray-300 rounded-lg px-4 py-3 outline-none resize-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200"
+                ></textarea>
+            </div>
+
+            <!-- Button -->
+            <button
+                type="submit"
+                class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition"
+            >
+                Submit
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+ <footer class="bg-slate-950 text-slate-200 py-16">
+            <section class="max-w-7xl mx-auto px-5">
+                <div class="grid gap-10 lg:grid-cols-4">
+                    <div>
+                        <h3 class="text-2xl font-bold text-white mb-4">My Coaching</h3>
+                        <p class="text-slate-400 leading-relaxed">Trusted coaching institute in Patna offering JEE,
+                            NEET, and board exam preparation with expert faculty and proven results.</p>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-semibold text-white mb-4">Quick Links</h4>
+                        <ul class="space-y-3 text-slate-400">
+                            <li><a href="index.html" class="hover:text-white transition">Home</a></li>
+                            <li><a href="course.html" class="hover:text-white transition">Courses</a></li>
+                            <li><a href="teacher.html" class="hover:text-white transition">Teachers</a></li>
+                            <li><a href="admission.html" class="hover:text-white transition">Admission</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-semibold text-white mb-4">Contact Info</h4>
+                        <p class="text-slate-400">Phone: <a href="tel:+911234567890"
+                                class="hover:text-white transition">+91 12345 67890</a></p>
+                        <p class="text-slate-400">Email: <a href="mailto:info@mycoaching.com"
+                                class="hover:text-white transition">info@mycoaching.com</a></p>
+                        <p class="text-slate-400">Address: Patna, Bihar, India</p>
+                        <br>
+                        <p class="text-slate-400">
+                            <i class="fa-brands fa-whatsapp" style="color: rgb(99, 230, 190); font-size: 25px;"></i>
+                            <a href="tel:+911234567890" class="hover:text-white transition">+91 9241296570</a>
+                        </p>
+                    </div>
+                    <!-- <div>
+                        <h4 class="text-xl font-semibold text-white mb-4">Follow Us</h4>
+                        <ul class="space-y-3 text-slate-400 ul">
+                            <li class="li"><a href="https://instagram.com" target="_blank" class="hover:text-white transition"><i class="fa-brands fa-instagram mr-2"></i>Instagram</a></li>
+                            <li class="li"><a href="https://twitter.com" target="_blank" class="hover:text-white transition"><i class="fa-brands fa-twitter mr-2"></i>Twitter</a></li>
+                            <li class="li"><a href="https://facebook.com" target="_blank" class="hover:text-white transition"><i class="fa-brands fa-facebook-f mr-2"></i>Facebook</a></li>
+                        </ul>
+                    </div> -->
+                    <div>
+                        <h4 class="text-xl font-semibold text-white mb-4">Follow Us</h4>
+                        <ul class="social-ul">
+                            <li class="social-li">
+                                <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li class="social-li">
+                                <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li class="social-li">
+                                <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mt-12 border-t border-slate-800 pt-6 text-center text-slate-500 text-sm">
+                    © 2026 My Coaching. All rights reserved.
+                </div>
+            </section>
+        </footer>
+</div>
+  
+</body>
+</html>
