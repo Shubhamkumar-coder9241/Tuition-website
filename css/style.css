@@ -4,19 +4,20 @@
     box-sizing: border-box;
 
 }
-#cursor{
-    height:20px;
+#cursor {
+    height: 20px;
     width: 20px;
     border-radius: 50%;
     /* background-color: rgb(255, 255, 255); */
     position: fixed;
     z-index: 3000;
-  background-color: #000;
+    background-color: #000;
 
 
 
 }
- .carousel-img {
+
+.carousel-img {
     position: absolute;
     inset: 0;
     width: 100%;
@@ -24,10 +25,12 @@
     object-fit: cover;
     opacity: 0;
     transition: opacity 1s ease-in-out;
-  }
-  .carousel-img.active {
+}
+
+.carousel-img.active {
     opacity: 1;
-  }
+}
+
 @media (hover: hover) and (pointer: fine) {
     #cursor {
         display: block;
@@ -59,16 +62,17 @@ body {
     width: 100%;
 }
 
-:root{
+:root {
     --header-height: clamp(48px, 3.8vw, 72px);
-    --header-bg: rgb(214,212,212);
+    --header-bg: rgb(214, 212, 212);
     --accent: #73bf6f;
 }
 
 /* Header */
-#header{
+#header {
     position: fixed;
-    inset: 0 auto auto 0; /* top:0; left:0 */
+    inset: 0 auto auto 0;
+    /* top:0; left:0 */
     right: 0;
     display: flex;
     align-items: center;
@@ -79,19 +83,19 @@ body {
     z-index: 1000;
 }
 
-#header #name{
+#header #name {
     display: flex;
     align-items: center;
     gap: 1.25rem;
 }
 
 
-.enrollment-form{
+.enrollment-form {
     display: initial;
     z-index: 5000;
 }
 
-#menu{
+#menu {
     background: transparent;
     border: none;
     padding: 0.35rem;
@@ -102,20 +106,32 @@ body {
     font-size: 1.1rem;
     cursor: pointer;
 }
+#backBtn {
+    background: transparent;
+    border: none;
+    padding: 0.35rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #191818;
+    font-size: 2rem;
+    cursor: pointer;
+}
 
-#menu:focus, #callBtn:focus{
-    outline: 3px solid rgba(59,130,246,0.18);
+#menu:focus,
+#callBtn:focus {
+    outline: 3px solid rgba(59, 130, 246, 0.18);
     outline-offset: 2px;
 }
 
-#logo{
+#logo {
     font-size: 1.15rem;
     font-weight: 600;
     color: #282727;
     letter-spacing: -0.4px;
 }
 
-#callBtn{
+#callBtn {
     background: transparent;
     border: none;
     padding: 0.35rem;
@@ -127,19 +143,32 @@ body {
     transition: transform 180ms ease, background-color 180ms ease, box-shadow 180ms ease;
 }
 
-#callBtn i{ color: rgb(103,225,189); font-size: 1.15rem; }
+#callBtn i {
+    color: rgb(103, 225, 189);
+    font-size: 1.15rem;
+}
 
-#callBtn:hover{
+#callBtn:hover {
     background-color: var(--accent);
     transform: translateY(-2px) scale(1.03);
-    box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
 }
 
 /* compact layout for small screens */
-@media (max-width: 640px){
-    #header{ padding: 0 0.9rem; }
-    #logo{ font-size: 1rem; }
-    #menu, #callBtn{ font-size: 1rem; padding: 0.2rem; }
+@media (max-width: 640px) {
+    #header {
+        padding: 0 0.9rem;
+    }
+
+    #logo {
+        font-size: 1rem;
+    }
+
+    #menu,
+    #callBtn {
+        font-size: 1rem;
+        padding: 0.2rem;
+    }
 }
 
 /* #hero {
@@ -216,45 +245,46 @@ font-size: 1.5vw;
 
 
 /* side menu */
-.side-menu{
+.side-menu {
     position: fixed;
     top: 0;
     left: 0;
     width: 300px;
     height: 100vh;
 
-background: rgba(255, 255, 255, 0.75);
-backdrop-filter: blur(12px);
--webkit-backdrop-filter: blur(12px);
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
 
-    box-shadow: 0 0 20px rgba(0,0,0,.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, .1);
 
     z-index: 1000;
 }
 
-.side-menu-inner{
+.side-menu-inner {
     padding: 20px;
 }
 
-.side-close{
+.side-close {
     border: none;
     background: none;
     font-size: 2rem;
     cursor: pointer;
 }
 
-.side-nav ul{
+.side-nav ul {
     list-style: none;
     padding: 0;
 }
 
-.side-nav a{
+.side-nav a {
     display: block;
     padding: 12px;
     text-decoration: none;
     /* color: #111827; */
-     color: #0a0a0a;
+    color: #0a0a0a;
 }
+
 /* end side mune */
 
 
@@ -267,7 +297,36 @@ backdrop-filter: blur(12px);
     margin-top: 10vw;
 }
 
-#teachersection #teacherui {
+
+#fright {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.fimages {
+    width: 90%;
+    max-width: 550px;
+    height: clamp(450px, 80vh, 700px);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.fimages img {
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+    object-fit: cover;
+    display: block;
+    will-change: transform;
+    backface-visibility: hidden; /* prevents subpixel flicker on transform */
+} */
+
+/* #teachersection #teacherui {
     display: flex;
     justify-content: space-between;
     height: 100vh;
@@ -291,35 +350,78 @@ backdrop-filter: blur(12px);
 
 }
 
-#teachersection #teacherui #fright {
+
+#fright{
+    width: 45%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+
+ .fimages{
+    width: 90%;
+    max-width: 550px;
+
+    height: clamp(450px, 80vh, 700px);
+
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.fimages img{
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+     object-position: center;
+    object-fit: cover;
+    display: block;
+} */
+ 
+/* .fimages{
+    width: min(100%, 550px);
+    height: clamp(450px, 80vh, 700px);
+
+    display: flex;
+    flex-direction: column;
+
+    overflow: hidden;
+    border-radius: 20px;
+
+    will-change: transform;
+} */
+/* #teachersection #teacherui #fright {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 45%;
     height: inherit;
-
+    overflow: hidden;
     padding: 8vh 2px;
 }
 
+
+
 #fright .fimages {
     width: 100%;
-    height: 90%;
+    height: 100%;
+    padding: 3vw 2vw;
+    display: flex;
+    flex-direction: column;
 
 
 }
 
-#fright .fimages .imgteacher {
-    width: 100%;
-    height: 90%;
-   
-}
-
-.imgteacher img {
+#fright .fimages img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
-
-}
+    object-fit: cover
+} */
 
 #fleft h2 {
     font-size: 2.5vw;
@@ -336,9 +438,11 @@ backdrop-filter: blur(12px);
     font-size: 1.1vw;
     font-weight: 400;
 }
-.right{
+
+.right {
     background-color: #000;
 }
+
 .btn {
     padding: var(--btn-padding);
     border-radius: var(--btn-border-radius);
@@ -428,7 +532,7 @@ backdrop-filter: blur(12px);
 
 /* Testimonials slide hover animation (two-slide effect) */
 /* Testimonials two-slide cover animation (slide2 covers slide1) */
-#testimonials .test-card{
+#testimonials .test-card {
     position: relative;
     width: 100%;
     height: 300px;
@@ -437,7 +541,7 @@ backdrop-filter: blur(12px);
     cursor: pointer;
 }
 
-#testimonials .test-card .slide{
+#testimonials .test-card .slide {
     position: absolute;
     left: 0;
     width: 100%;
@@ -445,18 +549,17 @@ backdrop-filter: blur(12px);
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: transform 600ms cubic-bezier(.2,.9,.2,1), opacity 300ms;
+    transition: transform 600ms cubic-bezier(.2, .9, .2, 1), opacity 300ms;
     box-sizing: border-box;
 }
 
-/* bottom layer (icon/visual) stays visible */
-#testimonials .test-card .slide.slide1{
+#testimonials .test-card .slide.slide1 {
     z-index: 1;
     transform: translateY(0);
     background: transparent;
 }
 
-#testimonials .test-card .slide.slide1 .icon{
+#testimonials .test-card .slide.slide1 .icon {
     width: 120px;
     height: 120px;
     border-radius: 9999px;
@@ -467,37 +570,77 @@ backdrop-filter: blur(12px);
     margin: auto;
 }
 
-/* top layer (content) begins off-canvas below and slides up to cover */
-#testimonials .test-card .slide.slide2{
+
+/* #testimonials .test-card .slide.slide2 {
     z-index: 2;
     transform: translateY(100%);
     padding: 24px;
     background: #ffffff;
-    box-shadow: 0 20px 40px rgba(2,6,23,0.08);
+    box-shadow: 0 20px 40px rgba(2, 6, 23, 0.08);
+} */
+ #testimonials .test-card .slide.slide2 {
+    z-index: 2;
+    transform: translateY(100%);
+    padding: 24px;
+    background: #ffffff;
+    box-shadow: 0 20px 40px rgba(2, 6, 23, 0.08);
+    overflow-y: auto; /* in case content is taller than the card on small screens */
 }
 
-/* on hover / focus / explicit open class -> slide content up to cover */
+
+
 #testimonials .test-card:hover .slide.slide2,
 #testimonials .test-card:focus-within .slide.slide2,
 #testimonials .test-card.slide-open .slide.slide2 {
     transform: translateY(0);
 }
 
-/* slight lift/scale for the bottom layer when covered */
+
 #testimonials .test-card:hover .slide.slide1,
 #testimonials .test-card:focus-within .slide.slide1,
-#testimonials .test-card.slide-open .slide.slide1{
+#testimonials .test-card.slide-open .slide.slide1 {
     transform: translateY(-16px) scale(0.985);
     opacity: 0.98;
 }
 
-#testimonials .test-card .slide2 .content p{ margin: 0; }
+#testimonials .test-card .slide2 .content p {
+    margin: 0;
+}
 
-/* Mobile: make slides stack and disable absolute transforms for better touch UX */
-@media (max-width: 768px) {
-    #testimonials .test-card{ height: auto; }
-    #testimonials .test-card .slide{ position: relative; transform: none; padding: 18px; }
-    #testimonials .test-card .slide.slide1 .icon{ width:56px; height:56px; font-size:1.1rem; }
+
+/* @media (max-width: 768px) {
+    #testimonials .test-card {
+        height: auto;
+    }
+
+    #testimonials .test-card .slide {
+        position: relative;
+        transform: none;
+        padding: 18px;
+    }
+
+    #testimonials .test-card .slide.slide1 .icon {
+        width: 56px;
+        height: 56px;
+        font-size: 1.1rem;
+    }
+} */
+ @media (max-width: 768px) {
+    #testimonials .test-card {
+        height: 260px; /* keep a fixed height so the absolute slide can still animate */
+    }
+
+    /* removed: position: relative / transform: none on .slide — that was what killed the effect */
+
+    #testimonials .test-card .slide.slide1 .icon {
+        width: 56px;
+        height: 56px;
+        font-size: 1.1rem;
+    }
+
+    #testimonials .test-card .slide.slide2 {
+        padding: 18px;
+    }
 }
 
 /* ── Grid layout ── */

@@ -74,8 +74,77 @@ function nextSlide() {
 setInterval(nextSlide, 4000);
 
 
+function hoverAnimation() {
 
+document.addEventListener('DOMContentLoaded', function () {
+  var cards = document.querySelectorAll('#testimonials .test-card');
 
+  cards.forEach(function (card) {
+    card.setAttribute('tabindex', '0');
 
+    card.addEventListener('click', function (e) {
+      // If the device has real hover (mouse), let CSS :hover handle it, do nothing here
+      if (window.matchMedia('(hover: hover)').matches) return;
 
+      var isOpen = card.classList.contains('slide-open');
+
+      // close any other open card first
+      cards.forEach(function (c) {
+        if (c !== card) c.classList.remove('slide-open');
+      });
+
+      card.classList.toggle('slide-open', !isOpen);
+    });
+  });
+
+  // tapping anywhere outside a card closes it
+  document.addEventListener('click', function (e) {
+    if (!e.target.closest('#testimonials .test-card')) {
+      cards.forEach(function (c) { c.classList.remove('slide-open'); });
+    }
+  });
+});
+}
+hoverAnimation();
+// let courseSearch=document.querySelector("#courseSearch");
+// let courseContainer=document.querySelector("#coursesContainer");
+//   courseSearch.addEventListener("input",function(dets){
+//   ;
+// })
+
+const input = document.querySelector("#courseSearch");
+const container = document.querySelector("#coursesContainer");
+
+input.addEventListener("input", () => {
+
+    const search = input.value.trim().toLowerCase();
+
+    const cards = [...container.querySelectorAll(".course")];
+
+    cards.sort((a, b) => {
+
+        const titleA = a.querySelector("h2").textContent.toLowerCase();
+        const titleB = b.querySelector("h2").textContent.toLowerCase();
+
+        const matchA = titleA.includes(search);
+        const matchB = titleB.includes(search);
+
+        if (matchA && !matchB) return -1;
+        if (!matchA && matchB) return 1;
+
+        return 0;
+    });
+
+    cards.forEach(card => container.appendChild(card));
+
+});
+const state = Flip.getState(".course");
+
+// sort and append cards
+
+Flip.from(state, {
+    duration: 0.5,
+    ease: "power2.inOut",
+    absolute: true
+});
 
